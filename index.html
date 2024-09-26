@@ -29,7 +29,7 @@
     .title {
       position: absolute;
       top: 0px;
-      left: 10px; /* 让文字靠左边 */
+      left: 0px; /* 让文字靠左边 */
       font-size: 128px;
       font-weight: bold;
       border: 0px solid #F0E3C1;
@@ -39,7 +39,7 @@
     .chinese-text {
       position: absolute;
       top: 140px;
-      left: 10px; /* 让文字靠左边 */
+      left: 0px; /* 让文字靠左边 */
       font-size: 128px;
       font-weight: bold;
       border: 0px solid #F0E3C1;
@@ -50,7 +50,7 @@
     .recipe {
       position: absolute;
       top: 150px;
-      left: 550px; /* 让文字靠右边 */
+      left: 540px; /* 让文字靠右边 */
       font-size: 128px;
       border: 0px solid #F0E3C1;
       padding: 10px;
@@ -60,13 +60,48 @@
     .guide {
       position: absolute;
       top: 300px;
-      right: 10px; /* 让文字靠右边 */
+      right: 0px; /* 让文字靠右边 */
       font-size: 128px;
       border: 0px solid #F0E3C1;
       padding: 10px;
       font-weight: bold;
     }
- 
+    .box{
+      position: absolute;
+      top: 45px;
+      right: 0px;
+      margin-top: 10px;
+      width: 970px;
+      height: 80px;
+      border: 5px solid#F0E3C1;
+      border-right: none;
+      
+    }
+
+    .box1{
+      position: absolute;
+      top: 200px;
+      right: 0px;
+      margin-top: 10px;
+      width: 510px;
+      height: 80px;
+      border: 5px solid#F0E3C1;
+      border-right: none;
+      
+    }
+
+    .box2{
+      position: absolute;
+      top: 340px;
+      left: 0px;
+      margin-top: 10px;
+      width: 1110px;
+      height: 80px;
+      border: 5px solid#F0E3C1;
+      border-left: none;
+      
+    }
+
   
   </style>
 </head>
@@ -76,7 +111,14 @@
     <div class="chinese-text">中国味道</div>
     <div class="recipe">Recipe</div>
     <div class="guide">Guide</div>
-  </div>
+  <div class="box"></div>
+  <div class="box1"></div>
+  <div class="box2"></div>
+</div>
 
+<div style="display: flex; justify-content: center; align-items: center; height: 70vh;">
+<img src="img/map.png" alt="img" alt="img" width="90%" ">
+</div>
   
 </body>
+</html>
