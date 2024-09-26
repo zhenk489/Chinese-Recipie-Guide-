@@ -21,7 +21,7 @@
       background-color: #EA522F;
       color: #F0E3C1;
       box-sizing: border-box;
-      overflow: hidden;
+      overflow: hidden ;
     }
 
     .container {
@@ -91,15 +91,15 @@
 
     .dish {
       position: absolute;
-      top: 56%; /* 使用百分比调整位置 */
+      top: 54%; /* 使用百分比调整位置 */
       left: 20%; /* 使用百分比调整位置 */
       transform: translate(-50%, -50%);
-      width: 45%; /* 使用百分比控制图片的大小，确保缩放时大小自适应 */
+      width: 40%; /* 使用百分比控制图片的大小，确保缩放时大小自适应 */
     }
     
     ul {
       position: relative;
-      top: 66%;
+      top: 65%;
       left: 10%;
       margin-top: 20px;
       list-style-type: disc; /* 默认的列表样式 */
@@ -117,7 +117,7 @@
 
     .stars1{
       position: relative;
-      top: 25%; /* 设定星星图片的大小 */
+      top: 24%; /* 设定星星图片的大小 */
       left: 10%;
       margin-left: 5px;
       width: 24%;
@@ -125,7 +125,7 @@
     
     .stars2{
       position: relative;
-      top: 31%; /* 设定星星图片的大小 */
+      top: 30%; /* 设定星星图片的大小 */
       left: 0%;
       margin-left: 5px;
       width: 24%;
@@ -133,7 +133,7 @@
     
     .stars3{
       position: absolute;
-      top: 70%; /* 设定星星图片的大小 */
+      top: 69%; /* 设定星星图片的大小 */
       left: 19%;
       margin-left: 5px;
       width: 24%;
@@ -141,7 +141,7 @@
 
     .stars4{
       position: absolute;
-      top: 75%; /* 设定星星图片的大小 */
+      top: 74%; /* 设定星星图片的大小 */
       left: 27%;
       margin-left: 5px;
       width: 24%;
@@ -167,6 +167,79 @@
       font-weight: regular;
       writing-mode: vertical-rl;
       transform: rotate(180deg);
+    }
+
+    .button1 {
+  background-color: #F0E3C1; /* 按钮背景色 */
+  position: absolute;
+  top: 60%;
+  right: 6%;
+  color: #EA522F;            /* 按钮文本颜色 */
+  padding: 10px 30px;        /* 内边距，调整按钮大小 */
+  font-size: 32px;           /* 文本大小 */
+  font-weight: bold;      /* 字体粗细 */
+  border-radius: 30px;       /* 圆角 */
+  border: none;              /* 无边框 */
+  outline: none;             /* 移除焦点时的边框 */
+  cursor: pointer;           /* 鼠标悬停时显示手形图标 */
+  transition: all 0.3s ease; /* 过渡效果 */
+  width: 48vh;
+  height: 60px;
+}
+
+.button1:hover  {
+      background-color: #F0E3C1; /* 悬停时背景色 */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* 悬停时阴影更深 */
+      transform: translateY(-2px); 
+    }
+
+.button2 {
+  background-color: #F0E3C1; /* 按钮背景色 */
+  position: absolute;
+  top: 74%;
+  right: 6%;
+  color: #EA522F;            /* 按钮文本颜色 */
+  padding: 10px 30px;        /* 内边距，调整按钮大小 */
+  font-size: 32px;           /* 文本大小 */
+  font-weight: bold;      /* 字体粗细 */
+  border-radius: 30px;       /* 圆角 */
+  border: none;              /* 无边框 */
+  outline: none;             /* 移除焦点时的边框 */
+  cursor: pointer;           /* 鼠标悬停时显示手形图标 */
+  transition: all 0.3s ease; /* 过渡效果 */
+  width: 48vh;
+  height: 60px;
+}
+
+.button2:hover  {
+      background-color: #F0E3C1; /* 悬停时背景色 */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* 悬停时阴影更深 */
+      transform: translateY(-2px); 
+    }
+
+  
+    .button3 {
+  background-color: #F0E3C1; /* 按钮背景色 */
+  position: absolute;
+  top: 88%;
+  right: 6%;
+  color: #EA522F;            /* 按钮文本颜色 */
+  padding: 10px 30px;        /* 内边距，调整按钮大小 */
+  font-size: 32px;           /* 文本大小 */
+  font-weight: bold;      /* 字体粗细 */
+  border-radius: 30px;       /* 圆角 */
+  border: none;              /* 无边框 */
+  outline: none;             /* 移除焦点时的边框 */
+  cursor: pointer;           /* 鼠标悬停时显示手形图标 */
+  transition: all 0.3s ease; /* 过渡效果 */
+  width: 48vh;
+  height: 60px;
+}
+
+.button3:hover  {
+      background-color: #F0E3C1; /* 悬停时背景色 */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* 悬停时阴影更深 */
+      transform: translateY(-2px); 
     }
 </style>
 
@@ -207,5 +280,12 @@
       <div class="vertical-text1">
         From Sichuan
        </div>
+
+       <a href="Kungpao Chicken ingredients entry.html">
+        <button class="button1">ingredients</button>
+       </a>
+
+        <button class="button2">process of making</button>
+        <button class="button3">accompaniment</button>
 </body>
 </html>
