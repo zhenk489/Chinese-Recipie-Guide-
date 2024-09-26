@@ -1,11 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Paytone+One&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Chinese Recipe Guide</title>
+  
+
+  <style>
+  
+
+    /* 基本重置，确保没有额外的默认边距 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Public Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #EA522F;
+      color: #F0E3C1;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100vw; /* 确保充满整个屏幕宽度 */
+      overflow: hidden; /* 避免滚动条 */
+    }
+
+    .boxgreen {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 65%;
+      height: 48vh;
+      color: #2d7b6e;
+      background-color: #2d7b6e;
+      border-right: none;
+      
+    }
+
+    .boxblack {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      width: 35%;
+      height: 48vh;
+      color: black;
+      background-color: black;
+      border-right: none;
+      
+    }
+
+    .homeicon {
+      position: absolute;
+      top: 6%; /* 使用百分比调整位置 */
+      left: 4%; /* 使用百分比调整位置 */
+      transform: translate(-50%, -50%);
+      width: 5%; /* 使用百分比控制图片的大小 */
+      color: #F0E3C1;
+
+    }
+
+    .chinese-text {
+      position: absolute;
+      top: 14%;
+      left: 3%; /* 让文字靠左边 */
+      font-size: 60px;
+      font-weight: bold;
+      border: 0px solid #F0E3C1;
+      padding: 10px;
+      font-style: normal;
+      
+    }
+
+    .kungpao-chicken {
+      position: absolute;
+      top: 19%;
+      left: 3%;
+      font-size: 96px;
+      border: 0px solid #F0E3C1;
+      padding: 10px;
+      font-family: Paytone one;
+
+
+    }
+
+    .dish {
+      position: absolute;
+      top: 56%; /* 使用百分比调整位置 */
+      left: 20%; /* 使用百分比调整位置 */
+      transform: translate(-50%, -50%);
+      width: 45%; /* 使用百分比控制图片的大小，确保缩放时大小自适应 */
+    }
+    
+    ul {
+      position: relative;
+      top: 66%;
+      left: 10%;
+      margin-top: 20px;
+      list-style-type: disc; /* 默认的列表样式 */
+      padding-left: 3px; /* 列表左侧的间距 */
+    
+    }
+
+    li {
+      font-family: Nunito ;
+      font-weight: semibold;
+      font-size: 36px;
+      margin-bottom: 2px; /* 每个列表项之间的间距 */
+      color: #F0E3C1;
+    }
+
+    .stars1{
+      position: relative;
+      top: 25%; /* 设定星星图片的大小 */
+      left: 10%;
+      margin-left: 5px;
+      width: 24%;
+    }
+    
+    .stars2{
+      position: relative;
+      top: 31%; /* 设定星星图片的大小 */
+      left: 0%;
+      margin-left: 5px;
+      width: 24%;
+    }
+    
+    .stars3{
+      position: absolute;
+      top: 70%; /* 设定星星图片的大小 */
+      left: 19%;
+      margin-left: 5px;
+      width: 24%;
+    }
+
+    .stars4{
+      position: absolute;
+      top: 75%; /* 设定星星图片的大小 */
+      left: 27%;
+      margin-left: 5px;
+      width: 24%;
+    }
+
+    .vertical-text {
+      position: absolute;
+      top: 6%;
+      right: 1%;
+      font-size: 32px;
+      color: #F0E3C1;
+      font-weight: regular;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+
+    .vertical-text1{
+      position: absolute;
+      top: 21.5%;
+      right: 3.5%;
+      font-size: 32px;
+      color: #F0E3C1;
+      font-weight: regular;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+</style>
+
 </head>
+  
 <body>
-   <p>this is entry 1</p> 
+    <div class="boxgreen"></div>
+    <div class="boxblack"></div>
+
+    <a href="index.html">
+        <img src="img/homepage.svg" alt="homeicon" class="homeicon">
+      </a>
+
+      <div class="chinese-text">宫保鸡丁</div>
+
+      <div class="kungpao-chicken">KungPao Chicken</div>
+
+     
+      <p>KungPao Chicken<span style="font-family: 'Paytone One', sans-serif;">Paytype One</span> 的文字。</p>
+
+      <div style="position: relative; width: 80%; margin: 0 auto; top: 10%; left: 100%;"></div>
+      <img src="img/Kungpao Chicken.png" alt="Kungpao Chicken" width="12%" class="dish">
+      
+
+      <ul>
+        <li>flavor</li>
+        <li>level of difficulty</li>
+        <li>healthiness</li>
+        <li>ingredient availability</li>
+      </ul>
+      <img src="img/4star.png" alt="stars" class="stars1">
+      <img src="img/3 star.png" alt="stars" class="stars2">
+      <img src="img/3 star.png" alt="stars" class="stars3">
+      <img src="img/4star.png" alt="stars" class="stars4">
+      <div class="vertical-text">
+       Southern part of China
+      </div>
+      <div class="vertical-text1">
+        From Sichuan
+       </div>
 </body>
 </html>
