@@ -1,138 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chinese Recipe Guide</title>
-
-  <style>
-  
-
-    /* 基本重置，确保没有额外的默认边距 */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: "Public Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      background-color: #EA522F;
-      color: #F0E3C1;
-    }
-
-    /* 创建一个相对定位的容器 */
-    .container {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* 使用绝对定位来将文字靠边 */
-    .title {
-      position: absolute;
-      top: 0px;
-      left: 0px; /* 让文字靠左边 */
-      font-size: 128px;
-      font-weight: bold;
-      border: 0px solid #F0E3C1;
-      padding: 10px;
-    }
-
-    .chinese-text {
-      position: absolute;
-      top: 140px;
-      left: 0px; /* 让文字靠左边 */
-      font-size: 128px;
-      font-weight: bold;
-      border: 0px solid #F0E3C1;
-      padding: 10px;
-      font-style: bold;
-    }
-
-    .recipe {
-      position: absolute;
-      top: 150px;
-      left: 540px; /* 让文字靠右边 */
-      font-size: 128px;
-      border: 0px solid #F0E3C1;
-      padding: 10px;
-      font-weight: bold;
-    }
-
-    .guide {
-      position: absolute;
-      top: 300px;
-      right: 0px; /* 让文字靠右边 */
-      font-size: 128px;
-      border: 0px solid #F0E3C1;
-      padding: 10px;
-      font-weight: bold;
-    }
-    .box{
-      position: absolute;
-      top: 45px;
-      right: 0px;
-      margin-top: 10px;
-      width: 970px;
-      height: 80px;
-      border: 5px solid#F0E3C1;
-      border-right: none;
-      
-    }
-
-    .box1{
-      position: absolute;
-      top: 200px;
-      right: 0px;
-      margin-top: 10px;
-      width: 510px;
-      height: 80px;
-      border: 5px solid#F0E3C1;
-      border-right: none;
-      
-    }
-
-    .box2{
-      position: absolute;
-      top: 340px;
-      left: 0px;
-      margin-top: 10px;
-      width: 1110px;
-      height: 80px;
-      border: 5px solid#F0E3C1;
-      border-left: none;
-      
-    }
-
-    .dish {
-      position: absolute;
-      top: 150%; /* 使用百分比调整位置 */
-      left: 48%; /* 使用百分比调整位置 */
-      transform: translate(-50%, -50%);
-      width: 18%; /* 使用百分比控制图片的大小，确保缩放时大小自适应 */
-    }
-
-  
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hinese Recipe Guide</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .box{
+            height: 8rem;
+            min-height: 4rem;
+            border: 0.5rem solid#F0E3C1;
+        }
+        .box-left{
+            margin-right: 3%;
+            border-left: none;
+        }
+        .box-right{
+            margin-left: 3%;
+            border-right: none;
+        }
+        .top-line{
+            display: flex;
+            align-items: center;
+            padding-top: 3rem;
+        }
+        .top-line .box{
+            flex: 1;
+        }
+        .top-line .title{
+            font-size: 12.8rem;
+            font-weight: bold;
+        }
+        .top-line .title-left{
+            padding-left: 10px;
+        }
+        .top-line .title-right{
+            padding-right: 10px;
+        }
+        .china-map{
+            position: relative;
+            width: 90vw;
+            margin: 8rem auto 0;
+        }
+        .china-map img{
+            width: 100%;
+        }
+        .china-map .dish-site{
+            position: absolute;
+            width: 20%;
+            top: 51%;
+            left: 38%;
+        }
+        @media(max-width: 1440px) {
+            html{
+                font-size: 9px;
+            }
+        }
+        @media(max-width: 1280px) {
+            html{
+                font-size: 7px;
+            }
+        }
+        @media(max-width:1080px){
+            html{
+                font-size: 6px;
+            }
+        }
+        @media(max-width:960px){
+            html{
+                font-size: 5px;
+            }
+        }
+        @media(max-width:640px){
+            html{
+                font-size: 4px;
+            }  
+        }
+        @media(max-width:480px){
+            .top-line .title{
+                font-size: 9rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="title">Chinese</div>
-    <div class="chinese-text">中国味道</div>
-    <div class="recipe">Recipe</div>
-    <div class="guide">Guide</div>
-  <div class="box"></div>
-  <div class="box1"></div>
-  <div class="box2"></div>
-</div>
-
-<div style="display: flex; justify-content: center; align-items: center; height: 70vh;">
-<img src="img/map.png" alt="img" alt="img" width="90%" ">
-</div>
-
-<a href="KungPao Chicken entry-1.html">
-<div style="position: relative; width: 80%; margin: 0 auto; top: 10%; left: 100%;"></div>
-<img src="img/Kungpao Chicken.png" alt="Kungpao Chicken" width="15%" class="dish">
-</div>
-
-  
+    <div class="wrapper">
+        <div class="top-line">
+            <div class="title title-left">Chinese</div>
+            <div class="box box-right"></div>
+        </div>
+        <div class="top-line">
+            <div class="title title-left">中国味道 Recipe</div>
+            <div class="box box-right"></div>
+        </div>
+        <div class="top-line">
+            <div class="box box-left"></div>
+            <div class="title title-right">Guide</div>
+        </div>
+        <div class="china-map">
+            <img src="img/map.png" alt="img" alt="img"/>
+            <div class="dish-site">
+                <a href="KungpaoChicken-entry-1.html">
+                    <img src="img/KungpaoChicken.png" alt="Kungpao Chicken">
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

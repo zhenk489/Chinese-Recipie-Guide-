@@ -1,0 +1,34 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "Public Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #EA522F;
+    color: #F0E3C1;
+}
+a{
+    text-decoration: none;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0E3C1; /* 按钮背景色 */
+    color: #EA522F;            /* 按钮文本颜色 */
+    padding: 0 30px;        /* 内边距，调整按钮大小 */
+    font-size: 3.2rem;           /* 文本大小 */
+    font-weight: bold;      /* 字体粗细 */
+    border-radius: 30px;       /* 圆角 */
+    border: none;              /* 无边框 */
+    outline: none;             /* 移除焦点时的边框 */
+    cursor: pointer;          /* 鼠标悬停时显示手形图标 */
+    transition: all 0.3s ease; /* 过渡效果 */
+    height: 60px;
+    white-space: nowrap;
+}
+.button:hover{
+    background-color: #F0E3C1; /* 悬停时背景色 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* 悬停时阴影更深 */
+    transform: translateY(-2px);
+    cursor: pointer;
+}
