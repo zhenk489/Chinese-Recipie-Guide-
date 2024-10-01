@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <style>
-       .colums-layout{
+        .colums-layout{
             position: relative;
             display: flex;
             min-height: 48vh;
@@ -21,3 +21,212 @@
             width: 65%;
             padding:8rem 0;
             background: #2d7b6e;
+        }
+        .back-icon{
+            position: absolute;
+            top: 1vw;
+            left: 2vw;
+            width: 5rem;
+            cursor: pointer;
+        }
+        .food-name{
+            margin-left: 5vw;
+        }
+
+        .english-text{
+            font-family: "Paytone one";
+            font-size: 9.6rem;
+        }
+        .colums-black{
+            display: flex;
+            justify-content: space-between;
+            width: 35%;
+            background: #000;
+        }
+        .text-container{
+            max-width: 300px;
+            margin: 4rem 2rem 0 5rem;
+            font-size: 2rem;
+            line-height: 1.2;
+            color: #fff;
+        }
+        .vertical-text-wrap{
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            padding: 6rem 0;
+        }
+        .vertical-text{
+            font-size: 3.2rem;
+            color: #F0E3C1;
+            font-weight: regular;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            white-space: nowrap;
+        }
+        .vertical-text:nth-child(1){
+            position: relative;
+            top: 25%;
+            margin-right: 10px;
+        }
+        .orange-container{
+            position: relative;
+            width: 90vw;
+            min-height: 150vh;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bottom-container .dish{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: auto;
+            transform: translateY(-35%);
+        }
+        /* rate list */
+        .rate-list{
+            padding: 11vw 0 4vw 4vw;
+        }
+        .rate-list li{
+            display: flex;
+            align-items: center;
+            font-family: Nunito ;
+            font-weight: semibold;
+            font-size: 3.6rem;
+            margin-bottom: 2px; /* 每个列表项之间的间距 */
+            color: #F0E3C1;
+        }
+        .rate-list li:before{
+            content: "";
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            margin-right: 1rem;
+            background: #F0E3C1;
+            border-radius: 50%;
+        }
+        .rate-list .rate-text{
+            padding-right: 2rem;
+            white-space: nowrap;
+        }
+        .rate-list img{
+            height: 4.8rem;
+        }
+        /* button */
+        .button-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            min-height: 320px;
+            padding: 5vh 0;
+            box-sizing: border-box;
+        }
+        .button-box .button{
+            width: 26vw;
+        }
+        @media(max-width:1440px){
+            html{
+                font-size: 9px;
+            }
+        }
+        @media(max-width:1280px){
+            html{
+                font-size: 7px;
+            }
+        }
+        @media(max-width:1080px){
+            html{
+                font-size: 6px;
+            }
+            .text-container{
+                font-size: 12px;
+            }
+        }
+        @media(max-width:960px){
+            html{
+                font-size: 5px;
+            }
+            .colums-layout{
+                flex-direction: column;
+                min-height: 0;
+            }
+            .colums-green,
+            .colums-black{
+                width: 100%;
+            }
+            .text-container{
+                margin-left: 5vw;
+            }
+            .bottom-container{
+                flex-direction: column;
+                min-height: 0;
+            }
+            .bottom-container .dish{
+                width: 33%;
+            }
+            .rate-list{
+                padding-top: 18vw;
+                padding-bottom: 0;
+            }
+            .rate-list li{
+                font-size: 18px;
+            }
+            .button-box{
+                min-height: 0;
+            }
+            .button-box .button{
+                width: 100%;
+                margin-top: 30px;
+            }
+            .button-box .button:nth-child(1){
+                margin-top: 0;
+            }
+        }
+        @media(max-width:640px){
+            html{
+                font-size: 4px;
+            }
+            .english-text{
+                font-size: 8rem;
+            }
+            .rate-list{
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        </div>
+        <div class="orange-container">
+            <a href="KungpaoChicken-entry-1.html">
+                <img src="img/back1.svg" alt="backicon" class="back-icon">
+            </a>
+        </div>
+        <div class="wrapper">
+            <div class="colums-layout">
+                <div class="colums-green">
+                    <div class="food-name">
+        
+                        <div class="english-text">KungPao Chicken</div>
+                    </div>
+                </div>
+                <div class="colums-black">
+                    <div class="text-container">
+                        Kung Pao Chicken is a classic Chinese stir-fry dish made with diced chicken, peanuts, and vegetables, all tossed in a flavorful, spicy-sweet sauce. This Sichuan-style recipe combines the heat of dried chili peppers with a tangy soy-based sauce.
+                    </div>
+                    <div class="vertical-text-wrap">
+                        <div class="vertical-text">
+                            From Sichuan
+                        </div>
+                        <div class="vertical-text">
+                            Southern part of China
+                        </div>
+                    </div>  
+                </div>
+    </div>
+</body>
+</html>
+    
