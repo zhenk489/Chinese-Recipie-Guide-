@@ -13,12 +13,13 @@
         .colums-layout{
             position: relative;
             display: flex;
-            min-height: 48vh;
+            min-height: 80vh;
         }
         .colums-green{
+            position: relative;
             display: flex;
             align-items: center;
-            width: 70%;
+            width: 65%;
             padding:8rem 0;
             background: #2d7b6e;
         }
@@ -30,17 +31,19 @@
             cursor: pointer;
         }
         .food-name{
-            margin-left: 5vw;
+            margin-left: 3vw;
+            margin-top: -38vw;
         }
 
         .english-text{
             font-family: "Paytone one";
-            font-size: 9.6rem;
+            font-size: 6rem;
+    
         }
         .colums-black{
             display: flex;
             justify-content: space-between;
-            width: 30%;
+            width: 35%;
             background: #000;
         }
         .text-container{
@@ -63,12 +66,10 @@
             writing-mode: vertical-rl;
             transform: rotate(180deg);
             white-space: nowrap;
+            margin-right: 15px;
+            margin-bottom: 30px;
         }
-        .vertical-text:nth-child(1){
-            position: relative;
-            top: 25%;
-            margin-right: 10px;
-        }
+    
         .orange-container{
             position: relative;
             width: 90vw;
@@ -85,35 +86,28 @@
             font-family: Public Sans;
         }
 
-        /* rate list */
-        .rate-list{
-            padding: 11vw 0 4vw 4vw;
+        /* introduction */
+        .introduction{
+            padding: 8vw 0 0vw 30vw;
+            margin-top: 30vw;
         }
-        .rate-list li{
+        .list_title{
             display: flex;
             align-items: center;
-            font-family: Nunito ;
-            font-weight: semibold;
-            font-size: 3.6rem;
+            font-family: Public Sans ;
+            font-weight: bold;
+            font-size: 3rem;
             margin-bottom: 2px; /* 每个列表项之间的间距 */
-            color: #F0E3C1;
+            color: white;
         }
-        .rate-list li:before{
-            content: "";
-            display: block;
-            width: 1rem;
-            height: 1rem;
-            margin-right: 1rem;
-            background: #F0E3C1;
-            border-radius: 50%;
+        .sub-text {
+            font-family: "Public Sans", sans-serif;
+            font-weight: normal;
+            font-size: 1.6rem;
+            color: white;
+            margin-top: 0.5rem; /* 调整与标题的间距 */
         }
-        .rate-list .rate-text{
-            padding-right: 2rem;
-            white-space: nowrap;
-        }
-        .rate-list img{
-            height: 4.8rem;
-        }
+
         /* button */
         .button-box{
             display: flex;
@@ -123,6 +117,15 @@
             padding: 5vh 0;
             box-sizing: border-box;
         }
+
+        .dishpepper{
+            top: 60vh;
+            left: 10vh;
+            width: 15%;
+            height: auto;
+            transform: translateY(-35%);
+        }
+
         .button-box .button{
             width: 26vw;
         }
@@ -207,29 +210,37 @@
             <div class="headline">
                 What you need before start the recipe
             </div>
-            
-
+            <ul class="introduction">
+                <li>
+                    <span class="list_title">Pan or iron wok</span>
+                </li>
+                <li>
+                    <span class="list_title">Seasoning Products:</span>
+                    <p class="sub-text">Soy sauce, pepper, rice vinegar, sugar, soy sauce, oyster sauce, starch.</p>
+                </li>
+                <li>
+                    <span class="list_title">Pickling session</span>
+                    <p class="sub-text">Marinate the diced chicken breasts in soy sauce and oyster sauce, scrunch them up and marinate for five minutes, add corn starch and corn oil to lock the chicken in moisture and marinate for ten minutes or more.</p>
+                </li>
+            </ul>
         </div>
+
         <div class="wrapper">
             <div class="colums-layout">
                 <div class="colums-green">
-                    <div class="food-name">
-        
-                        <div class="english-text">KungPao Chicken</div>
-                    </div>
+                    <div class="english-text">Gather your ingredients</div>
+                    
+                    <img src="/Users/mac/Desktop/Chinese-Recipie-Guide-/img/pepper.png" alt="Kungpao Chicken" class="dishpepper">
+                
                 </div>
                 <div class="colums-black">
                     <div class="text-container">
                         Kung Pao Chicken is a classic Chinese stir-fry dish made with diced chicken, peanuts, and vegetables, all tossed in a flavorful, spicy-sweet sauce. This Sichuan-style recipe combines the heat of dried chili peppers with a tangy soy-based sauce.
                     </div>
-                    <div class="vertical-text-wrap">
-                        <div class="vertical-text">
-                            From Sichuan
+                     <div class="vertical-text">
+                            Where you can get these ingredients
                         </div>
-                        <div class="vertical-text">
-                            Southern part of China
-                        </div>
-                    </div>  
+                    
                 </div>
     </div>
 </body>
