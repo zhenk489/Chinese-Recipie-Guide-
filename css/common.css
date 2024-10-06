@@ -32,3 +32,16 @@ a{
     transform: translateY(-2px);
     cursor: pointer;
 }
+.text-right{
+    text-align: right;
+}
+.wrapper{
+    position: relative;
+}
+.top-icon{
+    position: absolute;
+    top: 1vw;
+    left: 4rem;
+    width: 5rem;
+    cursor: pointer;
+}

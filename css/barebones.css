@@ -30,7 +30,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 固定为三列布局 */
-  grid-gap: 0px; /* 设置格子之间的间距 */
+  grid-gap: 20px; /* 设置格子之间的间距 */
   max-width: var(--grid-max-width);
   margin: 0 auto;
   padding: 20px;
