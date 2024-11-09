@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Paytone+One&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .top-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 8rem 4rem;
+            min-height: 100vh;
+        }
+        .headline{
+            font-size: 8rem;
+            color: #F0E3C1;
+            font-weight: bolder;
+            font-family: Public Sans;
+        }
+        /* introduction */
+        .introduction{
+            margin: 15rem 0 0 50vw;
+            list-style: disc outside;
+            font-family: Public Sans ;
+            font-weight: bold;
+            font-size: 3.2rem;
+            color: #fff;
+        }
+        .introduction li{
+            position: relative;
+            margin-top: 3rem; /* 每个列表项之间的间距 */
+        }
+        .introduction li:first-child{
+            margin-top: 0;
+        }
+        .introduction .sub-text {
+            font-family: "Public Sans", sans-serif;
+            font-weight: normal;
+            font-size: 2.4rem;
+            color: #fff;
+            margin-top: 0.5rem; /* 调整与标题的间距 */
+        }
+        /* bottom */
+        .colums-bottom-layout{
+            position: relative;
+            display: flex;
+            min-height: 45vh;
+        }
+        /* bottom green */
+        .colums-bottom-green{
+            width: 65%;
+            background: #2d7b6e;
+        }
+        .ingredients{
+            padding:4rem;
+        }
+        .ingredients-title{
+            font-family: "Paytone one";
+            font-size: 6rem;
+        }
+        .ingredients-img{
+            width: 90%;
+            padding-top: 3%;
+            
+        }
+        /* bottom black */
+        .colums-bottom-black{
+            position: relative;
+            width: 35%;
+            background: #000;
+        }
+        .get-ingredients{
+            display: flex;
+            justify-content: space-between;
+            padding: 4rem 0 4rem 4rem;
+        }
+        .colums-bottom-black .vertical-text{
+            display: flex;
+            justify-content: center;
+            font-size: 3.2rem;
+            color: #F0E3C1;
+            font-weight: regular;
+            writing-mode: vertical-rl;
+            white-space: nowrap;
+            margin: 0 2rem;
+        }
+        .ordered-list{
+            list-style: decimal inside;
+            font-size: 2.4rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .ordered-list>li{
+            margin-top: 4rem;
+        }
+        .ordered-list>li:first-child{
+            margin-top: 0;
+        }
+        .sub-list{
+            margin-top: 2rem;
+            font-size: 1.6rem;
+            font-weight: normal;
+            color: rgba(255,255,255,0.8);
+            line-height: 2;
+        }
+        strong {
+            font-weight: bold;
+            color: #fff;
+        }
+        .more-info {
+            list-style: disc outside;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            margin-top: 5rem;
+            padding-left: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        @media(max-width:1440px){
+            html{
+                font-size: 9px;
+            }
+        }
+        @media(max-width:1280px){
+            html{
+                font-size: 7px;
+            }
+            .ordered-list{
+                font-size: 14px;
+            }
+            .sub-list,
+            .more-info{
+                font-size: 12px;
+            }
+        }
+        @media(max-width:1080px){
+            html{
+                font-size: 6px;
+            }
+        }
+        @media(max-width:960px){
+            html{
+                font-size: 5px;
+            }
+            .top-container{
+                min-height: 0;
+            }
+            .colums-bottom-layout{
+                flex-direction: column;
+                min-height: 0;
+            }
+            .colums-bottom-green,
+            .colums-bottom-black{
+                width: 100%;
+            }
+            .introduction{
+                font-size: 16px;
+            }
+            .introduction .sub-text{
+                font-size: 14px;
+            }
+            .ingredients-img{
+                width: 100%;
+            }
+        }
+        @media(max-width:640px){
+            html{
+                font-size: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+            <a href="steamedtwistedrolls-entry-8.html">
+                <img src="img/back1.svg" alt="backicon" class="top-icon">
+            </a>
+            <div class="top-container">      
+                <div class="headline">
+                    What <br/>you need <br/>before <br/>start the <br/>recipe
+                </div>
+                <ul class="introduction">
+                    <li>
+                        <span class="list_title">Steamer, rolling pin</span>
+                    </li>
+                    <li>
+                        <span class="list_title">Seasoning Products:</span>
+                        <p class="sub-text">Flour (high gluten, low gluten), Milk-scented, sugar, lard</p>
+                    </li>
+                    <li>
+                        <span class="list_title">Dough Rising Session</span>
+                        <p class="sub-text">After kneading, let the dough rest in a warm place for at least 40 minutes to allow it to rise fully. This step is crucial for ensuring the buns are light and fluffy, and it’s key to making delicious huajuan.</p>
+                    </li>
+                </ul>
+            </div>
+        <div class="colums-bottom-layout">
+            <div class="colums-bottom-green ingredients">
+                <div class="ingredients-title">Gather your ingredients</div>
+                <div><img src="img/com_steamed twisted rolls.png" alt="ingredients image" class="ingredients-img"></div>
+            </div>
+            <div class="colums-bottom-black get-ingredients">
+                <div>
+                    <ol class="ordered-list">
+                        <li>
+                            For seasoning products:
+                            <ul class="sub-list">
+                                <li><strong>Flushing:</strong> US 1 Market, grocery stores</li>
+                                <li><strong>Manhattan:</strong> Hmart, Trader Joes, Whole Foods, Target, Sunrise Mart</li>
+                                <li><strong>Long Island City:</strong><br/>Ai Mart, Koufuku Market, City Acres Market, Trader Joes, City Acres</li>
+                            </ul>
+                        </li>
+                        <li>
+                            For ingredients:
+                            <ul class="sub-list">
+                                <li><strong>Flushing:</strong> US 1 Market</li>
+                                <li><strong>Manhattan:</strong> Hmart, Trader Joes, Whole Foods</li>
+                                <li><strong>Long Island City:</strong><br/>City Acres Market, Trader Joes, Whole Foods</li>
+                                <li><strong>New Jersey:</strong> 99 Ranch Market</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    
+                    <ul class="more-info">
+                        <li>Online website that sells Chinese ingredients and anything related with Kitchen: Weee</li>
+                    </ul>
+                </div>
+                <div class="vertical-text">Where you can get these ingredients</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

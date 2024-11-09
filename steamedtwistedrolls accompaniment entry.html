@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Paytone+One&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .top-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 8rem 4rem;
+            min-height: 100vh;
+        }
+        
+        .headline{
+            font-size: 8rem;
+            color: #F0E3C1;
+            font-weight: bolder;
+            font-family: Public Sans;
+        }
+        .healthier-img{
+            display: flex;
+            align-items: center;
+        }
+        .healthier-img img{
+            width: 97%;
+        }
+        /* bottom */
+        .colums-bottom-layout{
+            position: relative;
+            display: flex;
+            min-height: 45vh;
+        }
+        /* bottom green */
+        .colums-bottom-green{
+            flex: 1;
+            background: #2d7b6e;
+        }
+        .tips-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 4rem;
+            color: #fff;
+        }
+        .tips-title{
+            font-size: 6rem;
+            font-weight: bold;
+        }
+        .tips-text{
+            width: 80%;
+            margin-top: 4rem;
+            font-size: 2rem;
+            line-height: 1.5;
+        }
+        .tips-bottom{
+            margin-top: 6rem;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        /* bottom black */
+        .colums-bottom-black{
+            position: relative;
+            background: #000;
+        }
+        .calorie-section{
+            width: 35%;
+            min-width: 320px;
+            padding: 4rem;
+            font-size: 1.6rem;
+            line-height: 1.5;
+        }
+        .calorie-card{
+            padding: 2rem;
+            border-radius: 2rem;
+            background: #F0E3C1;
+            color: #000;
+        }
+        .calorie-title{
+            width: 90%;
+            margin: 0 auto;
+            font-size: 2.8rem;
+            line-height: 1.2;
+            font-weight: bold;
+            color: #EA522F;
+            text-align: center;
+        }
+        .calorie-list{
+            margin-top: 3rem;
+        }
+        .calorie-list li{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+        .calorie-list li:first-child{
+            margin-top: 0;
+        }
+        .calorie-list .calories-num{
+            margin-left: 1rem;
+        }
+        .total-calories{
+            margin-top: 4rem;
+            text-align: right;
+            font-weight: bold;
+        }
+        .summarize-title{
+            margin-top: 3rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .summarize-text{
+            margin-top: 2rem;
+            color: #fff;
+        }
+        /* media check */
+        @media(max-width:1440px){
+            html{
+                font-size: 9px;
+            }
+        }
+        @media(max-width:1280px){
+            html{
+                font-size: 7px;
+            }
+            .calorie-section{
+                font-size: 12px;
+            }
+            .calorie-title{
+                font-size: 20px;
+            }
+            .summarize-title{
+                font-size: 18px;
+            }
+            .tips-text{
+                font-size: 14px;
+            }
+        }
+        @media(max-width:1080px){
+            html{
+                font-size: 6px;
+            }
+        }
+        @media(max-width:960px){
+            html{
+                font-size: 5px;
+            }
+        }
+        @media(max-width:640px){
+            html{
+                font-size: 4px;
+            }
+            .top-container{
+                min-height: 0;
+            }
+            .colums-bottom-layout{
+                flex-direction: column;
+                min-height: 0;
+            }
+            .colums-bottom-green,
+            .colums-bottom-black{
+                width: 100%;
+                min-width: 0;
+            }
+            .tips-text{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+            <a href="steamedtwistedrolls-entry-8.html">
+                <img src="img/back1.svg" alt="backicon" class="top-icon">
+            </a>
+            <div class="top-container">      
+                <div class="headline">
+                    Make your diet healthier!
+                </div>
+                <div class="healthier-img"><img src="img/combo_Milkrolls.png" alt="healthier"/></div>
+            </div>
+        <div class="colums-bottom-layout">
+            <div class="colums-bottom-black calorie-section">
+                <div class="calorie-card">
+                    <div class="calorie-title">Analyzation of Pumpkin Steamed Buns calorie</div>
+                    <ul class="calorie-list">
+                        <li>
+                            <span>Flour (300g)</span>
+                            <span class="calories-num">Around 1100 kcal </span>
+                        </li>
+                        <li>
+                            <span>Milk (170g)</span>
+                            <span class="calories-num"> 105 kcal</span>
+                        </li>
+                 
+                        <li>
+                            <span>Sugar (20g)</span>
+                            <span class="calories-num">90 calories</span>
+                        </li>
+                        <li>
+                            <span>Yeast (3g)</span>
+                            <span class="calories-num">10 calores</span>
+                        </li>
+                    </ul>
+                    <div class="total-calories">Total: 1300 calories (130 cal/pieces)</div>
+                </div>
+                <div class="summarize-title">Summarize:</div>
+                <p class="summarize-text">Flower rolls provide a good source of carbohydrates from flour, and are especially beneficial when eaten as part of a balanced breakfast or light snack, or as a main meal.</p>
+            </div>
+            <div class="colums-bottom-green tips-content">
+                <div class="tips-top">
+                    <div class="tips-title">Tips:</div>
+                    <p class="tips-text">While not highly caloric, huajuan do contain calories primarily from refined flour. This can lead to rapid spikes in blood sugar, so they’re best balanced with a source of protein (such as a boiled egg) or fiber (like a side of vegetables) to create a more balanced meal.</p>
+                    <p class="tips-text">Vegetables are an excellent source of dietary fiber which promotes healthy digestion,helps  maintain a  healthy weight,and  lowers the   risk of heart disease by reducing cholesterol levels.</p>
+                </div>
+                <div class="tips-bottom text-right">Try it with <br/>vegetables & soup.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
