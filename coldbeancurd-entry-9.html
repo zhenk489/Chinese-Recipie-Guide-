@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Paytone+One&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .colums-layout{
+            position: relative;
+            display: flex;
+            min-height: 48vh;
+        }
+        .colums-green{
+            display: flex;
+            align-items: center;
+            width: 65%;
+            padding:8rem 0;
+            background: #2d7b6e;
+        }
+        .home-icon{
+            position: absolute;
+            top: 1vw;
+            left: 2vw;
+            width: 5rem;
+            cursor: pointer;
+        }
+        .food-name{
+            margin-left: 5vw;
+        }
+        .chinese-text{
+            font-size: 6rem;
+        }
+        .english-text{
+            font-family: "Paytone one";
+            font-size: 9.6rem;
+        }
+        .colums-black{
+            display: flex;
+            justify-content: space-between;
+            width: 35%;
+            background: #000;
+        }
+        .text-container{
+            max-width: 300px;
+            margin: 4rem 2rem 0 5rem;
+            font-size: 2rem;
+            line-height: 1.2;
+            color: #fff;
+        }
+        .vertical-text-wrap{
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            padding: 6rem 0;
+        }
+        .vertical-text{
+            font-size: 3.2rem;
+            color: #F0E3C1;
+            font-weight: regular;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            white-space: nowrap;
+        }
+        .vertical-text:nth-child(1){
+            position: relative;
+            top: 25%;
+            margin-right: 10px;
+        }
+        .bottom-container{
+            position: relative;
+            width: 90vw;
+            min-height: 52vh;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bottom-container .dish{
+            position: absolute;
+            top: -7rem;
+            left: -9rem;
+            width: 50%;
+            height: auto;
+            transform: translateY(-35%);
+        }
+        /* rate list */
+        .rate-list{
+            padding: 11vw 0 4vw 4vw;
+        }
+        .rate-list li{
+            display: flex;
+            align-items: center;
+            font-family: Nunito ;
+            font-weight: semibold;
+            font-size: 3.6rem;
+            margin-bottom: 2px; /* 每个列表项之间的间距 */
+            color: #F0E3C1;
+        }
+        .rate-list li:before{
+            content: "";
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            margin-right: 1rem;
+            background: #F0E3C1;
+            border-radius: 50%;
+        }
+        .rate-list .rate-text{
+            padding-right: 2rem;
+            white-space: nowrap;
+        }
+        .rate-list img{
+            height: 4.8rem;
+        }
+        /* button */
+        .button-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            min-height: 320px;
+            padding: 5vh 0;
+            box-sizing: border-box;
+        }
+        .button-box .button{
+            width: 26vw;
+        }
+        @media(max-width:1440px){
+            html{
+                font-size: 9px;
+            }
+        }
+        @media(max-width:1280px){
+            html{
+                font-size: 7px;
+            }
+        }
+        @media(max-width:1080px){
+            html{
+                font-size: 6px;
+            }
+            .text-container{
+                font-size: 12px;
+            }
+        }
+        @media(max-width:960px){
+            html{
+                font-size: 5px;
+            }
+            .colums-layout{
+                flex-direction: column;
+                min-height: 0;
+            }
+            .colums-green,
+            .colums-black{
+                width: 100%;
+            }
+            .text-container{
+                margin-left: 5vw;
+            }
+            .bottom-container{
+                flex-direction: column;
+                min-height: 0;
+            }
+            .bottom-container .dish{
+                width: 33%;
+            }
+            .rate-list{
+                padding-top: 18vw;
+                padding-bottom: 0;
+            }
+            .rate-list li{
+                font-size: 18px;
+            }
+            .button-box{
+                min-height: 0;
+            }
+            .button-box .button{
+                width: 100%;
+                margin-top: 30px;
+            }
+            .button-box .button:nth-child(1){
+                margin-top: 0;
+            }
+        }
+        @media(max-width:640px){
+            html{
+                font-size: 4px;
+            }
+            .english-text{
+                font-size: 8rem;
+            }
+            .rate-list{
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="colums-layout">
+            <a href="index.html">
+                <img src="img/homepage.svg" alt="homeicon" class="home-icon">
+            </a>
+            <div class="colums-green">
+                <div class="food-name">
+                    <div class="chinese-text">凉拌腐竹</div>
+                    <div class="english-text">Cold Bean Curd</div>
+                </div>
+            </div>
+            <div class="colums-black">
+                <div class="text-container">
+                    Cold bean curd is a classic Chinese dish made from soaked yuba mixed with vegetables like carrots and cucumber. Seasoned with garlic, soy sauce, vinegar, and chili oil, it’s refreshing, slightly spicy, and rich in protein.
+                </div>
+                <div class="vertical-text-wrap">
+                    <div class="vertical-text">
+                        From XinJiang
+                    </div>
+                    <div class="vertical-text">
+                        Northern part of China
+                    </div>
+                </div>  
+            </div>
+
+            
+        </div>
+        <div class="bottom-container">
+            <img src="img/cold bean curd.png" alt="coldbeancurd" class="dish">
+            <ul class="rate-list">
+                <li>
+                    <span class="rate-text">flavor</span>
+                    <img src="img/5star.png" alt="stars">
+                </li>
+                <li>
+                    <span class="rate-text">level of difficulty</span>
+                    <img src="img/3star.png" alt="stars">
+                </li>
+                <li>
+                    <span class="rate-text">healthiness</span>
+                    <img src="img/3star.png" alt="stars"></li>
+                <li>
+                    <span class="rate-text">ingredient availability</span>
+                    <img src="img/4star.png" alt="stars">
+                </li>
+            </ul>
+            <div class="button-box">
+                <a href="coldbeancurd ingredients. entry.html">
+                    <button class="button">ingredients</button>
+                </a>
+
+                <a href="coldbeancurd process.entry.html"
+                <button class="button">process of making</button>
+                </a>
+
+                <a href="coldbeancurd accompaniment entry.html"
+                <button class="button">accompaniment</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
